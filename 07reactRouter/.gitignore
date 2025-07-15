@@ -23,4 +23,5 @@ dist-ssr
 *.sln
 *.sw?
 
-07reactRouter/src/assets/Logo.jpg
+src/assets/logo.jpg
+src/assets/Logo.jpg
