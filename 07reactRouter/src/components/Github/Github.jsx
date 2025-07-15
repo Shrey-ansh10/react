@@ -1,8 +1,7 @@
 import React from 'react'
-import { useLoaderData } from 'react-router-dom'
+// import { useLoaderData } from 'react-router-dom'
 
-function Github() {
-    const data = useLoaderData();
+function Github({data}) {
 
     // //using useState and useEffect
     // const [data, setData] = useState([]);
@@ -89,9 +88,9 @@ function Github() {
 
 export default Github
 
-//using loader instead of useEffect and useState hooks : helps loading page faster as it uses cache 
-export const githubInfoLoader = async () => {
-    const response = await fetch('https://api.github.com/users/Shrey-ansh10')
-    // const data = await response.json()
-    return response.json()
-}
+// //using loader instead of useEffect and useState hooks : helps loading page faster as it uses cache 
+// export const githubInfoLoader = async () => {
+//     const response = await fetch('https://api.github.com/users/Shrey-ansh10')
+//     // const data = await response.json()
+//     return response.json()
+// }

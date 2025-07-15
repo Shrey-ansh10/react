@@ -1,9 +1,29 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
+import Github from "../Github/Github";           
+// import { useLoaderData } from 'react-router-dom'
 
 
 export default function About() {
+
+    // const data = useLoaderData();
+
+    const [data, setData] = useState([]);
+
+    useEffect(() => {
+        fetch('https://api.github.com/users/Shrey-ansh10')
+            .then(response => response.json())
+            .then(data => {
+                // console.log(data);
+                setData(data)
+            })
+            .catch(error => console.error('Error fetching data:', error));
+    }, []);
+
     return (
         <div className="py-16 bg-white">
+
+            <Github data={data} />
+
             <div className="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
                 <div className="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
                     <div className="md:5/12 lg:w-5/12">
