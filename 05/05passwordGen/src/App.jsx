@@ -35,7 +35,7 @@ function App() {
   }, [length, numberAllowed, specialcharAllowed, passwordGenerator])
 
   const copyPasswordToClipboard = () => {
-    navigator.clipboard.writeText(password)
+    navigator.clipboard.writeText(password) //write text to clipboard i.e. copy
     passwordRef.current?.select() //select the text in the input field
   }
 
