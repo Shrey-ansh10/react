@@ -39,7 +39,7 @@ export default function Contact() {
                                         />
                                     </svg>
                                     <div className="ml-4 text-md tracking-wide font-semibold w-40">
-                                        Acme Inc, Street, State, Postal Code
+                                        Miami, Florida, USA
                                     </div>
                                 </div>
 
@@ -61,7 +61,7 @@ export default function Contact() {
                                         />
                                     </svg>
                                     <div className="ml-4 text-md tracking-wide font-semibold w-40">
-                                        +44 1234567890
+                                        +1 000 000 0000
                                     </div>
                                 </div>
 
@@ -83,7 +83,7 @@ export default function Contact() {
                                         />
                                     </svg>
                                     <div className="ml-4 text-md tracking-wide font-semibold w-40">
-                                        info@acme.org
+                                        shreyanshsharma10@hotmail.com
                                     </div>
                                 </div>
                             </div>
